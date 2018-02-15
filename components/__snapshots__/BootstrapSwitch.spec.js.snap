@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BootstrapSwitch render - bootstrapped 1`] = `
+<View>
+  <Bootstrapped />
+</View>
+`;
+
+exports[`BootstrapSwitch render - loading 1`] = `
+<View>
+  <Loading />
+</View>
+`;
