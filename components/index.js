@@ -1,0 +1,1 @@
+export { default as BootstrapSwitch } from './BootstrapSwitch';
