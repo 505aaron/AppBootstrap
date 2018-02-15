@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text } from "react-native";
-import renderer from "react-test-renderer";
 import ShallowRenderer from "react-test-renderer/shallow";
 import Bootstrapper from "./BootstrapSwitch";
 
