@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
+import renderer from "react-test-renderer";
 import ShallowRenderer from "react-test-renderer/shallow";
 import Bootstrapper from "./BootstrapSwitch";
 
@@ -20,6 +21,7 @@ describe("BootstrapSwitch", () => {
 
   beforeEach(() => {
     baseProps = {
+      initializeApp: jest.fn(),
       loading: <Loading />
     };
 
@@ -46,5 +48,15 @@ describe("BootstrapSwitch", () => {
 
     const tree = shallowRenderer.getRenderOutput();
     expect(tree).toMatchSnapshot();
+  });
+
+  test("lifecyle - mount", () => {
+    const testRenderer = renderer.create(
+      <Bootstrapper {...baseProps} boostrapComplete>
+        <Bootstrapped />
+      </Bootstrapper>
+    );
+
+    expect(baseProps.initializeApp).toHaveBeenCalledTimes(1);
   });
 });

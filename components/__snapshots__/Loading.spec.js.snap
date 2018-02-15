@@ -4,7 +4,10 @@ exports[`Loading render 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
       "flex": 1,
+      "justifyContent": "center",
     }
   }
 >
@@ -14,5 +17,12 @@ exports[`Loading render 1`] = `
     hidesWhenStopped={true}
     size="small"
   />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Loading...
+  </Text>
 </View>
 `;

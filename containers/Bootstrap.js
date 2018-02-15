@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import { bindActionCreators } from 'redux';
 import { BootstrapSwitch } from "../components";
-import { isBootstrapComplete } from "../store/bootstrap";
+import { isBootstrapComplete, ActionCreators } from "../store/bootstrap";
 
 const mapStateToProps = state => ({
-  boostrapComplete: isBootstrapComplete(state)
+  bootstrapComplete: isBootstrapComplete(state)
 });
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = dispatch => bindActionCreators(ActionCreators, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(BootstrapSwitch);

@@ -43,7 +43,7 @@ describe("Bootstrap", () => {
 
     expect(tree.props).toEqual(
       expect.objectContaining({
-        boostrapComplete: false
+        bootstrapComplete: false
       })
     );
   });

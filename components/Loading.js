@@ -1,10 +1,13 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import { View, ActivityIndicator, StyleSheet } from "react-native";
+import { View, ActivityIndicator, StyleSheet, Text } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
   }
 });
 
@@ -15,6 +18,7 @@ class Loading extends PureComponent {
     return (
       <View style={styles.container}>
         <ActivityIndicator />
+        <Text>Loading...</Text>
       </View>
     );
   }

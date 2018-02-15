@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { StyleSheet, Text, View } from "react-native";
 import configureStore from "./configureStore";
 import { Bootstrap } from "./containers";
-import { Loading } from "./components";
+import { Loading} from "./components";
 
 const store = configureStore();
 

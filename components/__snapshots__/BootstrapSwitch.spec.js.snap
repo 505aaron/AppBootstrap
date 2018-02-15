@@ -1,13 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BootstrapSwitch render - bootstrapped 1`] = `
-<View>
-  <Bootstrapped />
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Loading />
 </View>
 `;
 
 exports[`BootstrapSwitch render - loading 1`] = `
-<View>
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
   <Loading />
 </View>
 `;
